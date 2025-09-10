@@ -8,8 +8,9 @@ public class CurrencyConverter {
     int BritishPound;
     int Rupies;
     int MexicanPesos;
-    int CanadianDollars
+    int CanadianDollars;
     public static void main(String[] args) {
         //temp
+
     }
 }
