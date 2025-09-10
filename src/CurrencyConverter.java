@@ -16,5 +16,12 @@ public class CurrencyConverter {
         //1 Euro = 1.17 USD
         //1 Pound = 1.35 USD
         //1 CAD = 0.72 USD
+        String[] currencyColl = new String[6];
+        currencyColl[0] = "USD";
+        currencyColl[1] = "EUR";
+        currencyColl[2] = "GDP";
+        currencyColl[3] = "INR";
+        currencyColl[4] = "MXN";
+        currencyColl[5] = "CAD";
     }
 }
