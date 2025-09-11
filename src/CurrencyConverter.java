@@ -4,38 +4,48 @@ import java.util.Scanner;
 
 public class CurrencyConverter {
     public static double USD2EUR(double Us ){
-        return Us*0.85;
+        double equation = Us*0.85;
+        return Math.round(equation * 100.0) / 100.0;
     }
 
     public static double USD2GBP(double Us ){
-        return Us*0.74;
+        double equation = Us*0.74;
+        return Math.round(equation * 100.0) / 100.0;
     }
     public static double USD2INR(double Us){
-        return Us*88.10;
+        double equation = Us*88.10;
+        return Math.round(equation * 100.0) / 100.0;
     }
     public static double USD2MXN(double Us) {
-        return Us * 18.6;
+        double equation = Us * 18.6;
+        return Math.round(equation * 100.0) / 100.0;
     }
 
     public static double USD2CAD(double Us) {
-        return Us * 1.38;
+        double equation = Us * 1.38;
+        return Math.round(equation * 100.0) / 100.0;
     }
 
     public static double EUR2USD(double Eu) {
-        return Eu * 1.17;
+        double equation = Eu * 1.17;
+        return Math.round(equation * 100.0) / 100.0;
     }
 
     public static double GBP2USD(double Br) {
-        return Br * 1.36;
+        double equation = Br * 1.36;
+        return Math.round(equation * 100.0) / 100.0;
     }
     public static double INR2USD(double Rp ){
-        return Rp/88.10;
+        double equation = Rp/88.10;
+        return Math.round(equation * 100.0) / 100.0;
     }
     public static double MXN2USD(double Pp ){
-        return Pp/18.6;
+        double equation = Pp/18.6;
+        return Math.round(equation * 100.0) / 100.0;
     }
     public static double CAD2USD(double Cd ){
-        return Cd/1.38;
+        double equation = Cd/1.38;
+        return Math.round(equation * 100.0) / 100.0;
     }
     public static void main(String[] args) {
         //temp
