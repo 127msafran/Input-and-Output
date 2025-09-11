@@ -87,5 +87,8 @@ public class CurrencyConverter {
                 }
             }
         }
+        if (!(currencyInput.equalsIgnoreCase("USD"))) {
+
+        }
     }
 }
