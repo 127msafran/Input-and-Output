@@ -32,7 +32,7 @@ public class CurrencyConverter {
         return Pp/18.6;
     }
     public double Canadians2US(double Cd ){
-        return Cd/1.17;
+        return Cd/1.38;
     }
     public static void main(String[] args) {
         //temp
