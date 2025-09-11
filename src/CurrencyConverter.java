@@ -67,8 +67,21 @@ public class CurrencyConverter {
         }
         System.out.println("Please enter an amount for conversion: ");
         double currencyAmount = input.nextDouble();
-        System.out.println("What currency would you like to convert to? (USD, EUR, GBP, INR, MXN, or CAD)");
-        String currencyInput2 = input.nextLine();
+        String currencyInput2 = "";
+        running = true;
+        while (running) {
+            System.out.println("What currency would you like to convert to? (USD, EUR, GBP, INR, MXN, or CAD)");
+            currencyInput2 = input.nextLine();
+            for (String s : currencyColl) {
+                if (s.equals(currencyInput2)) {
+                    running = false;
+                    break;
+                }
+            }
+            if (running) {
+                System.out.println("Please enter a valid currency");
+            }
+        }
         for(int i = 0; i < currencyColl.length; i++){
             if(currencyInput.equals(currencyColl[i])){
                 String currFrom = currencyColl[i];
@@ -78,8 +91,6 @@ public class CurrencyConverter {
                     }
                 }
             }
-
         }
-
     }
 }
