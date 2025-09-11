@@ -82,15 +82,5 @@ public class CurrencyConverter {
                 System.out.println("Please enter a valid currency");
             }
         }
-        for(int i = 0; i < currencyColl.length; i++){
-            if(currencyInput.equals(currencyColl[i])){
-                String currFrom = currencyColl[i];
-                for(int j = 0; j < currencyColl.length; j++){
-                    if(currencyInput2.equals(currencyColl[j])){
-                        String currTo = currencyColl[j];
-                    }
-                }
-            }
-        }
     }
 }
