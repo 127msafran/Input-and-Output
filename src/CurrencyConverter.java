@@ -56,7 +56,7 @@ public class CurrencyConverter {
             System.out.println("What currency do you have? (USD, EUR, GBP, INR, MXN, or CAD)");
             currencyInput = input.nextLine();
             for (String s : currencyColl) {
-                if (s.equals(currencyInput)){
+                if (s.equalsIgnoreCase(currencyInput)){
                     running = false;
                     break;
                 }
@@ -73,7 +73,7 @@ public class CurrencyConverter {
             System.out.println("What currency would you like to convert to? (USD, EUR, GBP, INR, MXN, or CAD)");
             currencyInput2 = input.nextLine();
             for (String s : currencyColl) {
-                if (s.equals(currencyInput2)) {
+                if (s.equalsIgnoreCase(currencyInput2)) {
                     running = false;
                     break;
                 }
