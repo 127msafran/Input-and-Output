@@ -3,35 +3,35 @@ import java.util.Scanner;
 //Currencies: US to Euros, British Pounds, Rupees, Mexican Pesos, and Canadian dollars
 
 public class CurrencyConverter {
-    public double USD2EUR(double Us ){
+    public static double USD2EUR(double Us ){
         return Us*0.85;
     }
 
-    public double USD2GBP(double Us ){
+    public static double USD2GBP(double Us ){
         return Us*0.74;
     }
-    public double USD2INR(double Us){
+    public static double USD2INR(double Us){
         return Us*88.10;
     }
-    public double USD2MXN(double Us) {
+    public static double USD2MXN(double Us) {
         return Us * 18.6;
     }
-    public double USD2CAD(double Us ){
+    public static double USD2CAD(double Us ){
         return Us*1.38;
     }
-    public double EUR2USD(double Eu ){
+    public static double EUR2USD(double Eu ){
         return Eu*1.17;
     }
-    public double GBP2USD(double Br){
+    public static double GBP2USD(double Br){
         return Br*1.36;
     }
-    public double INR2USD(double Rp ){
+    public static double INR2USD(double Rp ){
         return Rp/88.10;
     }
-    public double MXN2USD(double Pp ){
+    public static double MXN2USD(double Pp ){
         return Pp/18.6;
     }
-    public double CAD2USD(double Cd ){
+    public static double CAD2USD(double Cd ){
         return Cd/1.38;
     }
     public static void main(String[] args) {
@@ -86,7 +86,19 @@ public class CurrencyConverter {
 
         }
         if (currencyInput.equalsIgnoreCase("EUR")) {
-            System.out.println(USD2EUR());
+            System.out.println(USD2EUR(currencyAmount));
+        }
+        if (currencyInput.equalsIgnoreCase("GBP")) {
+            System.out.println(USD2GBP(currencyAmount));
+        }
+        if (currencyInput.equalsIgnoreCase("INR")) {
+            System.out.println(USD2INR(currencyAmount));
+        }
+        if (currencyInput.equalsIgnoreCase("MXN")) {
+            System.out.println(USD2MXN(currencyAmount));
+        }
+        if (currencyInput.equalsIgnoreCase("CAD")) {
+            System.out.println(USD2CAD(currencyAmount));
         }
     }
 }
