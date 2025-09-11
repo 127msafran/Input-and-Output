@@ -89,21 +89,22 @@ public class CurrencyConverter {
         }
         if (!(currencyInput.equalsIgnoreCase("USD"))) {
 
-        }
-        if (currencyInput.equalsIgnoreCase("EUR")) {
-            System.out.println(USD2EUR(currencyAmount));
-        }
-        if (currencyInput.equalsIgnoreCase("GBP")) {
-            System.out.println(USD2GBP(currencyAmount));
-        }
-        if (currencyInput.equalsIgnoreCase("INR")) {
-            System.out.println(USD2INR(currencyAmount));
-        }
-        if (currencyInput.equalsIgnoreCase("MXN")) {
-            System.out.println(USD2MXN(currencyAmount));
-        }
-        if (currencyInput.equalsIgnoreCase("CAD")) {
-            System.out.println(USD2CAD(currencyAmount));
+        } else {
+            if (currencyInput.equalsIgnoreCase("EUR")) {
+                System.out.println(USD2EUR(currencyAmount));
+            }
+            if (currencyInput.equalsIgnoreCase("GBP")) {
+                System.out.println(USD2GBP(currencyAmount));
+            }
+            if (currencyInput.equalsIgnoreCase("INR")) {
+                System.out.println(USD2INR(currencyAmount));
+            }
+            if (currencyInput.equalsIgnoreCase("MXN")) {
+                System.out.println(USD2MXN(currencyAmount));
+            }
+            if (currencyInput.equalsIgnoreCase("CAD")) {
+                System.out.println(USD2CAD(currencyAmount));
+            }
         }
     }
 }
