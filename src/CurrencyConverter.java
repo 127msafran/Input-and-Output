@@ -82,5 +82,8 @@ public class CurrencyConverter {
                 System.out.println("Please enter a valid currency");
             }
         }
+        if (!(currencyInput.equalsIgnoreCase("USD"))) {
+
+        }
     }
 }
