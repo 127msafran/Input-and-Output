@@ -55,5 +55,6 @@ public class CurrencyConverter {
         System.out.println("Please enter an amount for conversion: ");
         double currencyAmount = input.nextDouble();
         System.out.println("What currency would you like to convert to? (USD, EUR, GBP, INR, MXN, or CAD)");
+        String currencyInput2 = input.nextLine();
     }
 }
