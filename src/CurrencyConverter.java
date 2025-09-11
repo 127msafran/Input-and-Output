@@ -96,8 +96,8 @@ public class CurrencyConverter {
                 }
             }
         }
-        if (!(currencyInput2.equalsIgnoreCase("USD"))) {
-            if (currencyInput.equalsIgnoreCase("USD")) {
+        if (!(currencyInput.equalsIgnoreCase("USD"))) {
+            if (currencyInput2.equalsIgnoreCase("USD")) {
                 if (currencyInput.equalsIgnoreCase("GBP")) {
                     System.out.println(GBP2USD(currencyAmount));
                 }
@@ -105,7 +105,7 @@ public class CurrencyConverter {
                     System.out.println(INR2USD(currencyAmount));
                 }
                 if (currencyInput.equalsIgnoreCase("MXN")) {
-                    System.out.println(MXN2USD(currencyAmount))
+                    System.out.println(MXN2USD(currencyAmount));
                 }
                 if (currencyInput.equalsIgnoreCase("CAD")) {
                     System.out.println(CAD2USD(currencyAmount));
@@ -114,7 +114,83 @@ public class CurrencyConverter {
                     System.out.println(EUR2USD(currencyAmount));
                 }
             }
+            else{
+                if (currencyInput.equalsIgnoreCase("GBP")) {
+                    if (currencyInput2.equalsIgnoreCase("INR")) {
+                        System.out.println(USD2INR(GBP2USD(currencyAmount)));
 
+                    }
+                    if (currencyInput2.equalsIgnoreCase("MXN")) {
+                        System.out.println(USD2MXN(GBP2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("CAD")) {
+                        System.out.println(USD2CAD(GBP2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("EUR")) {
+                        System.out.println(USD2EUR(GBP2USD(currencyAmount)));
+                    }
+                }
+                if (currencyInput.equalsIgnoreCase("INR")) {
+                    if (currencyInput2.equalsIgnoreCase("GBP")) {
+                        System.out.println(USD2GBP(INR2USD(currencyAmount)));
+
+                    }
+                    if (currencyInput2.equalsIgnoreCase("MXN")) {
+                        System.out.println(USD2MXN(INR2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("CAD")) {
+                        System.out.println(USD2CAD(INR2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("EUR")) {
+                        System.out.println(USD2EUR(INR2USD(currencyAmount)));
+                    }
+                }
+                if (currencyInput.equalsIgnoreCase("MXN")) {
+                    if (currencyInput2.equalsIgnoreCase("GBP")) {
+                        System.out.println(USD2GBP(MXN2USD(currencyAmount)));
+
+                    }
+                    if (currencyInput2.equalsIgnoreCase("INR")) {
+                        System.out.println(USD2INR(MXN2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("CAD")) {
+                        System.out.println(USD2CAD(MXN2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("EUR")) {
+                        System.out.println(USD2EUR(MXN2USD(currencyAmount)));
+                    }
+                }
+                if (currencyInput.equalsIgnoreCase("CAD")) {
+                    if (currencyInput2.equalsIgnoreCase("GBP")) {
+                        System.out.println(USD2GBP(CAD2USD(currencyAmount)));
+
+                    }
+                    if (currencyInput2.equalsIgnoreCase("INR")) {
+                        System.out.println(USD2INR(CAD2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("MXN")) {
+                        System.out.println(USD2MXN(CAD2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("EUR")) {
+                        System.out.println(USD2EUR(CAD2USD(currencyAmount)));
+                    }
+                }
+                if (currencyInput.equalsIgnoreCase("EUR")) {
+                    if (currencyInput2.equalsIgnoreCase("GBP")) {
+                        System.out.println(USD2GBP(EUR2USD(currencyAmount)));
+
+                    }
+                    if (currencyInput2.equalsIgnoreCase("INR")) {
+                        System.out.println(USD2INR(EUR2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("MXN")) {
+                        System.out.println(USD2MXN(EUR2USD(currencyAmount)));
+                    }
+                    if (currencyInput2.equalsIgnoreCase("CAD")) {
+                        System.out.println(USD2CAD(EUR2USD(currencyAmount)));
+                    }
+                }
+            }
         } else {
             if (currencyInput2.equalsIgnoreCase("EUR")) {
                 System.out.println(USD2EUR(currencyAmount));
