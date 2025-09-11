@@ -50,8 +50,20 @@ public class CurrencyConverter {
         currencyColl[5] = "CAD";
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the Currency Converter System!");
-        System.out.println("What currency do you have? (USD, EUR, GBP, INR, MXN, or CAD)");
-        String currencyInput = input.nextLine();
+        boolean running = true;
+        while (running) {
+            System.out.println("What currency do you have? (USD, EUR, GBP, INR, MXN, or CAD)");
+            String currencyInput = input.nextLine();
+            for (String s : currencyColl) {
+                if (s.equals(currencyInput)){
+                    running = false;
+                    break;
+                }
+            }
+            if (running) {
+                System.out.println("Please enter a valid currency");
+            }
+        }
         System.out.println("Please enter an amount for conversion: ");
         double currencyAmount = input.nextDouble();
         System.out.println("What currency would you like to convert to? (USD, EUR, GBP, INR, MXN, or CAD)");
