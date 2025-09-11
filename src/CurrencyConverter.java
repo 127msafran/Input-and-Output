@@ -85,5 +85,8 @@ public class CurrencyConverter {
         if (!(currencyInput.equalsIgnoreCase("USD"))) {
 
         }
+        if (currencyInput.equalsIgnoreCase("EUR")) {
+            System.out.println(USD2EUR());
+        }
     }
 }
