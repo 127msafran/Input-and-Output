@@ -51,9 +51,10 @@ public class CurrencyConverter {
         Scanner input = new Scanner(System.in);
         System.out.println("Welcome to the Currency Converter System!");
         boolean running = true;
+        String currencyInput = "";
         while (running) {
             System.out.println("What currency do you have? (USD, EUR, GBP, INR, MXN, or CAD)");
-            String currencyInput = input.nextLine();
+            currencyInput = input.nextLine();
             for (String s : currencyColl) {
                 if (s.equals(currencyInput)){
                     running = false;
@@ -69,7 +70,7 @@ public class CurrencyConverter {
         System.out.println("What currency would you like to convert to? (USD, EUR, GBP, INR, MXN, or CAD)");
         String currencyInput2 = input.nextLine();
         for(int i = 0; i < currencyColl.length; i++){
-            if(currencyInput.equals(currencyColl[i]){
+            if(currencyInput.equals(currencyColl[i])){
                 String currFrom = currencyColl[i];
                 for(int j = 0; j < currencyColl.length; j++){
                     if(currencyInput2.equals(currencyColl[j])){
