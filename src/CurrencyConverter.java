@@ -114,7 +114,7 @@ public class CurrencyConverter {
                     System.out.println(INR2USD(currencyAmount));
                 }
                 if (currencyInput.equalsIgnoreCase("MXN")) {
-                    System.out.println(MXN2USD(currencyAmount))
+                    System.out.println(MXN2USD(currencyAmount));
                 }
                 if (currencyInput.equalsIgnoreCase("CAD")) {
                     System.out.println(CAD2USD(currencyAmount));
