@@ -3,35 +3,35 @@ import java.util.Scanner;
 //Currencies: US to Euros, British Pounds, Rupees, Mexican Pesos, and Canadian dollars
 
 public class CurrencyConverter {
-    public double US2Euros(double Us ){
+    public double USD2EUR(double Us ){
         return Us*0.85;
     }
 
-    public double US2BritishPound(double Us ){
+    public double USD2GBP(double Us ){
         return Us*0.74;
     }
-    public double US2Rupees(double Us){
+    public double USD2INR(double Us){
         return Us*88.10;
     }
-    public double US2Pesos(double Us) {
+    public double USD2MXN(double Us) {
         return Us * 18.6;
     }
-    public double US2Canadian(double Us ){
+    public double USD2CAD(double Us ){
         return Us*1.38;
     }
-    public double Euros2US(double Eu ){
+    public double EUR2USD(double Eu ){
         return Eu*1.17;
     }
-    public double BritishPounds2US(double Br){
+    public double GBP2USD(double Br){
         return Br*1.36;
     }
-    public double Rupees2US(double Rp ){
+    public double INR2USD(double Rp ){
         return Rp/88.10;
     }
-    public double Pesos2US(double Pp ){
+    public double MXN2USD(double Pp ){
         return Pp/18.6;
     }
-    public double Canadians2US(double Cd ){
+    public double CAD2USD(double Cd ){
         return Cd/1.38;
     }
     public static void main(String[] args) {
@@ -44,7 +44,7 @@ public class CurrencyConverter {
         String[] currencyColl = new String[6];
         currencyColl[0] = "USD";
         currencyColl[1] = "EUR";
-        currencyColl[2] = "GDP";
+        currencyColl[2] = "GBP";
         currencyColl[3] = "INR";
         currencyColl[4] = "MXN";
         currencyColl[5] = "CAD";
