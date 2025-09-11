@@ -3,18 +3,16 @@ import java.util.Scanner;
 //Currencies: US to Euros, British Pounds, Rupees, Mexican Pesos, and Canadian dollars
 
 public class CurrencyConverter {
-    public static double USD2EUR(double Us) {
-        return Us * 0.85;
+    public static double USD2EUR(double Us ){
+        return Us*0.85;
     }
 
-    public static double USD2GBP(double Us) {
-        return Us * 0.74;
+    public static double USD2GBP(double Us ){
+        return Us*0.74;
     }
-
-    public static double USD2INR(double Us) {
-        return Us * 88.10;
+    public static double USD2INR(double Us){
+        return Us*88.10;
     }
-
     public static double USD2MXN(double Us) {
         return Us * 18.6;
     }
@@ -30,19 +28,15 @@ public class CurrencyConverter {
     public static double GBP2USD(double Br) {
         return Br * 1.36;
     }
-
-    public static double INR2USD(double Rp) {
-        return Rp / 88.10;
+    public static double INR2USD(double Rp ){
+        return Rp/88.10;
     }
-
-    public static double MXN2USD(double Pp) {
-        return Pp / 18.6;
+    public static double MXN2USD(double Pp ){
+        return Pp/18.6;
     }
-
-    public static double CAD2USD(double Cd) {
-        return Cd / 1.38;
+    public static double CAD2USD(double Cd ){
+        return Cd/1.38;
     }
-
     public static void main(String[] args) {
         //temp
         //1 INR = 0.011 USD
@@ -207,6 +201,24 @@ public class CurrencyConverter {
             if (currencyInput2.equalsIgnoreCase("CAD")) {
                 System.out.println(USD2CAD(currencyAmount));
             }
+            if (!(currencyInput.equalsIgnoreCase("USD"))) {
+                if (currencyInput.equalsIgnoreCase("USD")) {
+                    if (currencyInput.equalsIgnoreCase("GBP")) {
+                        System.out.println(GBP2USD(currencyAmount));
+                    }
+                    if (currencyInput.equalsIgnoreCase("INR")) {
+                        System.out.println(INR2USD(currencyAmount));
+                    }
+                    if (currencyInput.equalsIgnoreCase("MXN")) {
+                        System.out.println(MXN2USD(currencyAmount));
+                    }
+                    if (currencyInput.equalsIgnoreCase("CAD")) {
+                        System.out.println(CAD2USD(currencyAmount));
+                    }
+                    if (currencyInput.equalsIgnoreCase("EUR")) {
+                        System.out.println(EUR2USD(currencyAmount));
+                    }
+                }
             if (!(currencyInput.equalsIgnoreCase("USD"))) {
 
             }
